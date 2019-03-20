@@ -5,7 +5,8 @@
 La primera función es el filtro de los pokemones según tipo, como segunda utilidad tenemos el ordenamiento alfabetico ascendente y descendente, como tercera función el ordenamiento por número de pokedex.
 El diseño de la aplicación fue testeada en distintos usuarios (jugadores y NO jugadores) priorizando nuestro focus group.
 
-##Historias de Usuario
+
+## Historias de Usuario
 Realizamos entrevistas a distintos perfiles de usuarios de POKEMON GO y destacamos 3 items que ellos necesitan filtrar para obtener información.
 
 - Cesar (28 años), usuario de POKEMON GO desde 2017 quiere filtrar los pokemones por los tipos existentes y obtener la info completa de cada uno para saber cual escoger en las batallas.
@@ -15,11 +16,11 @@ Realizamos entrevistas a distintos perfiles de usuarios de POKEMON GO y destacam
 - Sandra (25 años), usuaria de POKEMON GO desde 2016 quiere filtrar los pokemones por nombre para saber la descripción de los pokemones nuevos que no conoce.
 
 
-##Prototipo de Baja Fidelidad 
+## Prototipo de Baja Fidelidad 
 
 
-##Prototipo de Alta Fidelidad
+## Prototipo de Alta Fidelidad
 
-##Link a Zeplin
+## Link a Zeplin
 
-##Problemas en los Test de Usabilidad
+## Problemas en los Test de Usabilidad
