@@ -9,26 +9,21 @@ const example = () => {
 
 window.example = example;
 
-/*const idPokemon = (object)=>{
-   
-  var array2d=[];
-  var properties =Object.keys(object);
-  for(var i=0; i<properties.length;i++){
-    array2d.push([properties[0],object[properties[0]]]);
+/*const idPokemon =()=>{
+  let nom=[];
+  for(var i=0; i<POKEMON.length;i++){
+    console.log(i);
+    nom.push( );
   }
-  return array2d;
-}
-console.log(idPokemon(POKEMON));*/
+  return 'idPokemon';
+};
+console.log(POKEMON.idPokemon=idPokemon);
+*/
 
-function filterPokemon(arrayPokemones,paramFilter){
-  let arrFiltrado=[];
-  arrayPokemones.forEach(element=>{
-    if (element.type.includes(paramFilter)){
-      arrFiltrado.push(element)
-    }
-  })
-} console.log(POKEMON.filterPokemon=filterPokemon);
-
-const namePokemon=()=>{
-  
+/*const idPokemon =()=>{
+  let id=[];
+  for(var i=0; i<POKEMON.pokemon.length;i++){
+    console.log(id);
+  }return id;
 }
+POKEMON.idPokemon=idPokemon;*/
