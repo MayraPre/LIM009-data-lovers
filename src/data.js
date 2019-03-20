@@ -25,6 +25,8 @@ function filterPokemon(arrayPokemones,paramFilter){
   arrayPokemones.forEach(element=>{
     if (element.type.includes(paramFilter)){
       arrFiltrado.push(element)
+
+      
     }
   })
 } console.log(POKEMON.filterPokemon=filterPokemon);
