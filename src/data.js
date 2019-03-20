@@ -15,10 +15,27 @@ window.example = example;
     console.log(i);
     nom.push( );
   }
+<<<<<<< HEAD
   return 'idPokemon';
 };
 console.log(POKEMON.idPokemon=idPokemon);
 */
+=======
+  return array2d;
+}
+console.log(idPokemon(POKEMON));*/
+
+function filterPokemon(arrayPokemones,paramFilter){
+  let arrFiltrado=[];
+  arrayPokemones.forEach(element=>{
+    if (element.type.includes(paramFilter)){
+      arrFiltrado.push(element)
+
+      
+    }
+  })
+} console.log(POKEMON.filterPokemon=filterPokemon);
+>>>>>>> 4feeb8424663fed10d74abdf122a6bc537c4051a
 
 /*const idPokemon =()=>{
   let id=[];
