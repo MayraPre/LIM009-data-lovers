@@ -1,55 +1,47 @@
 /* Manejo del DOM */
 
 const totalPokemons = POKEMON.pokemon;
+const arrListaPokemones= pokemon.listaPokemons(totalPokemons);
+const contenedor=document.getElementById("contenedor");
+const mostrarPokemones=document.getElementById("mostrarPokemones");
+const pokemonesFiltrados = document.getElementById("tiposPokemon");
+const orden=document.getElementById("orden-pokemon");
+const limpiar=document.getElementById("limpiar");
 
-/* lista de nombres
-for(let x=0; x<2;x++){
-  console.log(totalPokemons[x].name);
-}*/
-
-/*listado de nombres de la A-Z
-const arr=[];
-for(let x=0; x<totalPokemons.length;x++){
-  arr.push(totalPokemons[x].name);
+//Imprimir lista de pokemones
+const listaDePokemones = (data) => {
+	let mostrar = '';
+	for (let i = 0; i < data.length; i++) {
+    box = `
+    <div>
+	<img  src="${ data[i].img}" />
+	<p> Nombre : ${ data[i].name}</p>
+	<p> Tipo : ${ data[i].type}</p>
+	</div>
+`;
+	mostrar += box;
+	};
+	contenedor.innerHTML = mostrar;
 }
-console.log(arr.sort());*/
 
-/*for(let i=0; i<totalPokemons.length;i++){
-    const e=totalPokemons[0];
-    console.log(e.next_evolution);
-}*/
-
-/*function filtrar(a){
-    return a.type
-}
-const result = totalPokemons.filter(filtrar);
-console.log(result[0].type);*/
-
-
-const arrname=[];
-for(let x=0; x<totalPokemons.length;x++){
-  arrname.push(totalPokemons[x].next_evolution);
-}
-//console.log(arrname);
-
-const a=arrname.forEach(function(element) {
-  console.log(element);
+//Mostrar pokemones
+mostrarPokemones.addEventListener("click", function(){
+  listaDePokemones(arrListaPokemones)
 });
 
-const box= document.getElementById('app')
-const addPokemon=(pokemones)=>{
-  for(let i=0; i<pokemones.length;i++){
-    box.innerHTML+=`
-    <div>
-       <p>${pokemones[i].name}</p>
-       <figure>
-       <img src="${pokemones[i].img}" alt="Foto" class="img-perfil">
-       </figure>
-       <p>${pokemones[i].type}</p>
-       
-    </div>
-    `;
-  }
-}
-addPokemon(totalPokemons);
+//Mostrar los pokemones por orde
+orden.addEventListener("change",()=>{
+  const ordenando= pokemon.ordenPokemones(totalPokemons, orden.value);
+	listaDePokemones(ordenando);
+} );
 
+//Filtrar pokemones por tipo
+pokemonesFiltrados.addEventListener("change", () => {
+	const filtrandoPokemones = pokemon.filtrarPokemones(totalPokemons, pokemonesFiltrados.value);
+	listaDePokemones(filtrandoPokemones);
+});
+
+//limpiar la pantalla
+limpiar.addEventListener("click",()=>{
+  contenedor.innerHTML=" ";
+})
