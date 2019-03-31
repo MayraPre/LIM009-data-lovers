@@ -1,6 +1,95 @@
-body{
-background: url(https://www.pokemongo.com/assets/images/poke-ball-plus/background.webp);
+html{
+background: url(https://assets.pokemon.com/static2/_ui/img/chrome/body_bg.png);
+}
+    
+    
+header{
+text-align: center;
+display: grid;
 border: 1px solid #000000;
 box-sizing: border-box;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+box-shadow: 0px 4px 4px rgba(163, 44, 44, 0.25);
+}
+    
+    
+.body-divider{
+box-sizing: inherit;  
+height: 70px;
+background-color: #313131;
+}
+    
+    
+body{
+text-align: center;
+background: url(http://wallpapercanyon.com/wp-content/uploads/2016/01/White-Wallpaper-19.jpg);
+border: 1px solid #000000;
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(163, 44, 44, 0.25);
+}
+    
+    
+.footer-divider{
+box-sizing: inherit;  
+height: 70px;
+background-color: #313131;
+}
+    
+    
+footer{
+display: grid;
+text-align: center;
+grid-column-gap: 50px;
+grid-template-columns: 1fr 1fr;
+grid-template-areas: "footer1; footer2";
+}
+    
+/*  ELIMINANDO EL GRID TEMPLATE AREA IGUAL FUNCIONA PREGUNTA ESO */
+.global-footer-1{  
+grid-area: "footer1";
+display:inline-block;
+vertical-align:middle;
+}
+    
+.global-footer-2{
+grid-area: "footer2";
+}
+    
+    
+/* FOOTER 2 -BOTONES */
+.fa {
+padding: 18px;
+font-size: 70px;
+width: 18px;
+text-align: center;
+text-decoration: none;
+margin: 5px 2px;
+border-radius: 50%;
+}
+    
+.fa:hover {
+opacity: 0.7;
+}
+    
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+    
+.fa-twitter {
+background: #55ACEE;
+color: white;
+}
+    
+.fa-youtube {
+background: #bb0000;
+color: white;
+}
+      
+.fa-instagram {
+background: #c7033e;
+color: white;
+}
+    
+/* FILTRO */
+.Filters{
 }
