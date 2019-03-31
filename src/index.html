@@ -6,21 +6,35 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <div id="app"></div>
-    <select name="filtro1" id="filtro1">
-      <option value="1"> </option>
-      <option value="6">Grass</option>
-      <option value="2">Poison</option>
-      <option value="3">Fire</option>
-      <option value="4">Water</option>
-      <option value="5">Fliying</option>
-    </select>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
+      <button id=mostrarPokemones>Mostrar Pokemones</button>
+      <select class="select" id="orden-pokemon">
+          <option value="">Ordenar</option>
+          <option value="ordenaz" >A - Z</option>
+          <option value="ordenza" >Z - A</option>
+      </select>
+      <select class="tiposPokemon" id="tiposPokemon">
+        <option value="">Pokemones por tipo</option>
+        <option value="Grass">Hierba</option>
+        <option value="Poison">Veneno</option>
+        <option value="Fire">Fuego</option>
+        <option value="Ice">Hielo</option>
+        <option value="Flying">Volador</option>
+        <option value="Psychic">Psiquico</option>
+        <option value="Water">Agua</option>
+        <option value="Ground">Suelo</option>
+        <option value="Rock">Roca</option>
+        <option value="Electric">Electrico</option>
+        <option value="Bug">Insecto</option>
+        <option value="Normal">Normal</option>
+        <option value="Fighting">Peleador</option>
+        <option value="Ghost">Fantasma</option>
+        <option value="Dragon">Dragon</option>
+      </select>
+      <button id=limpiar>Limpiar</button>
+      <div>
+          <div id="contenedor"></div>
+      </div>
     <script src="./data/pokemon/pokemon.js"></script> 
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
     <script src="data.js"></script>
     <script src="main.js"></script>
   </body>
