@@ -52,15 +52,10 @@ const ordenPokemones=(data,orden)=>{
 /* Ordenado ascendente */
 //console.log(namePokemon.sort(sortArrs))
 
-const computeStats=(data)=>{
-   arravgSpawns=[];
-   for(let i=0; i<data.length;i++){
-     arravgSpawns.push(data[i].avg_spawns);
-   }
-   var total = arravgSpawns.reduce(function(a, b){ return a + b; });
-   return total/151;
+const computeStats=(data,tipo)=>{
+   porcentaje=tipo.length/data.length;
+   return porcentaje.toFixed(3);
 }
 
-window.pokemon = {listaPokemons, filtrarPokemones, ordenPokemones};
-
+window.pokemon = {listaPokemons, filtrarPokemones, ordenPokemones,computeStats};
 
